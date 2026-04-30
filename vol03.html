@@ -20,7 +20,7 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.88);backdrop-
 .hero-meta{display:flex;align-items:center;gap:16px;margin-bottom:40px}
 .meta-year{font-size:13px;font-weight:500;color:#1d1d1f;background:#f5f5f7;padding:4px 12px;border-radius:20px}
 .meta-cat{font-size:13px;color:#86868b}
-.hero-lead{font-size:19px;font-weight:300;line-height:1.75;color:#1d1d1f;max-width:640px}
+.hero-lead{font-size:19px;font-weight:300;line-height:1.75;color:#1d1d1f;max-width:100%}
 .hero-lead .hl{background:linear-gradient(transparent 60%,#fff3c0 60%)}
 
 /* 画像エリア — 白背景でキャンのラベル感を活かす */
@@ -34,24 +34,25 @@ nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.88);backdrop-
 .image-caption-credit{font-size:11px;color:#86868b;letter-spacing:.04em}
 
 .body-section{padding:80px 48px;max-width:980px;margin:0 auto}
-.body-text{font-size:17px;font-weight:300;line-height:1.85;color:#1d1d1f;max-width:640px}
+.body-text{font-size:17px;font-weight:300;line-height:1.85;color:#1d1d1f;max-width:100%}
 .body-text p+p{margin-top:24px}
 .body-text .hl{background:linear-gradient(transparent 60%,#fff3c0 60%)}
 
 /* 補足ブロック — ウォーホルとの関係性 */
-.aside-block{margin-top:40px;padding:28px 32px;background:#f5f5f7;border-radius:12px;max-width:640px}
+.aside-block{margin-top:40px;padding:28px 32px;background:#f5f5f7;border-radius:12px;max-width:980px}
 .aside-label{font-size:10px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:#86868b;margin-bottom:12px}
-.aside-text{font-size:15px;font-weight:300;line-height:1.8;color:#1d1d1f}
+.aside-text{font-size:15px;font-weight:300;line-height:1.8;color:#1d1d1f;max-width:980px}
 
 .quote-section{padding:0 48px 80px;max-width:980px;margin:0 auto}
 .quote-block{border-left:2px solid #e8472b;padding:4px 0 4px 32px}
-.quote-text{font-size:24px;font-weight:300;line-height:1.65;color:#1d1d1f;font-style:italic;letter-spacing:-.01em;margin-bottom:16px}
+.quote-text{font-size:24px;font-weight:300;line-height:1.65;color:#1d1d1f;font-style:italic;letter-spacing:-.01em;margin-bottom:16px;max-width:100%}
+.quote-translation{font-size:15px;font-weight:300;line-height:1.7;color:#86868b;font-style:normal;margin-top:10px;margin-bottom:14px;}
 .quote-author{font-size:13px;color:#86868b;font-weight:400;font-style:normal}
 
 .question-section{background:#1d1d1f;padding:80px 48px}
 .question-inner{max-width:980px;margin:0 auto}
 .question-label{font-size:11px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:#6e6e73;margin-bottom:20px}
-.question-text{font-size:22px;font-weight:300;line-height:1.7;color:#f5f5f7;max-width:640px}
+.question-text{font-size:22px;font-weight:300;line-height:1.7;color:#f5f5f7;max-width:100%}
 .question-text em{color:#e8472b;font-style:normal}
 
 .nav-bottom{padding:48px;display:flex;justify-content:space-between;align-items:center;border-top:.5px solid #d2d2d7}
@@ -63,7 +64,7 @@ footer{padding:32px 48px;border-top:.5px solid #d2d2d7;display:flex;justify-cont
 .footer-logo span{color:#c0bfba}
 .footer-copy{font-size:12px;color:#86868b}
 
-@media(max-width:640px){
+@media(max-width:720px){
   nav{padding:0 20px}
   .hero{padding:80px 20px 60px}
   .image-section{padding:60px 20px}
@@ -109,20 +110,21 @@ footer{padding:32px 48px;border-top:.5px solid #d2d2d7;display:flex;justify-cont
 
 <div class="body-section">
   <div class="body-text">
-    <p>もともとキャンベルのスープ缶は青とオレンジのラベルだった。それを1898年、会社の幹部Herberton Williamsがコーネル大学のフットボールユニフォームの赤と白を見て「これだ」と直感し、カラーを変更した。</p>
-    <p>筆記体の「Campbell's」ロゴ、中央の金色のメダル（1900年のパリ万博で受賞した本物）、下部の「SOUP」の文字。<span class="hl">このレイアウトはその後125年間、基本構造を変えていない。</span>スーパーマーケットの棚で瞬時に「キャンベル」とわかる視覚的アイデンティティが、そこに宿っていたからだ。</p>
-    <p>そして1962年、アンディ・ウォーホルがこの缶を32点のシルクスクリーンで描いた。ウォーホルは「毎日同じものを食べ続けた」と語っていた。変わらないデザインが、アートの素材になった。パッケージデザインが美術館に収蔵された瞬間だった。</p>
-
-    <div class="aside-block">
-      <div class="aside-label">Warhol との関係</div>
-      <p class="aside-text">ウォーホルの「Campbell's Soup Cans」（1962年）は現在MoMAに収蔵されている。ウォーホルは「量産されたものの美しさ」を描いたが、その対象として選んだのは、まさに「変わらないデザイン」だった。オリジナルのパッケージデザインが変わらなかったからこそ、アートとして成立した。</p>
-    </div>
+    <p>スーパーの棚に並ぶ無数の缶詰の中で、キャンベルだけは一瞬で分かる。赤と白、筆記体のロゴ、金のメダル。<span class="hl">このデザインは1898年から125年間、基本構造を変えていない。</span></p>
+    <p>衝撃的なのは「変えなかった」という事実だ。デザインの世界では「刷新」「リブランディング」が常に正解とされる。なのにキャンベルは一度もそれをしなかった。結果として、このラベルは「缶詰」というカテゴリを超えて、アメリカの日常風景そのものになった。</p>
+    <p>そして1962年、アンディ・ウォーホルがこの缶を32点のシルクスクリーンで描いた。彼は「毎日同じスープを20年間食べ続けた」と語っている。ウォーホルが狙ったのは「量産品を美術館に持ち込む」という挑発だったが、それが成立したのは、キャンベルのデザインが変わらなかったからだ。<span class="hl">変わらないデザインが、アートの文脈まで獲得した。</span></p>
   </div>
-</div>
+
+  <div class="aside-block">
+    <div class="aside-label">Warhol との関係</div>
+    <p class="aside-text">ウォーホルの「Campbell's Soup Cans」（1962年）は現在MoMAに永久収蔵されている。ウォーホルはこの作品で「日常の量産品と芸術の境界」を問うた。しかし皮肉なのは、ウォーホルが描いた対象が125年変わらないデザインだったことだ。もしキャンベルが時代ごとにリデザインしていたら、ウォーホルの作品は成立しなかったかもしれない。パッケージデザインがアート作品の「素材」になった稀有な例。</p>
+  </div>
+</div></div>
 
 <div class="quote-section">
   <div class="quote-block">
     <p class="quote-text">"I used to drink it. I used to have the same lunch every day, for twenty years."</p>
+    <p class="quote-translation">「ずっと飲んでいた。20年間、毎日同じ昼食を食べ続けた。」</p>
     <p class="quote-author">— Andy Warhol（キャンベルのトマトスープについて）</p>
   </div>
 </div>
