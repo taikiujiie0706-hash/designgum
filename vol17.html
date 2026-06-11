@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vol.17 信号機の色を決めた男 — DESIGNGUM</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiBmaWxsPSIjMWExYTFhIi8+PHRleHQgeD0iMiIgeT0iMjQiIGZvbnQtZmFtaWx5PSJBcmlhbCBCbGFjaywgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMCIgZm9udC13ZWlnaHQ9IjkwMCIgZmlsbD0iI2ZmZmZmZiIgbGV0dGVyLXNwYWNpbmc9Ii0xIj5EPC90ZXh0Pjx0ZXh0IHg9IjEzIiB5PSIyNCIgZm9udC1mYW1pbHk9IkFyaWFsIEJsYWNrLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIwIiBmb250LXdlaWdodD0iOTAwIiBmaWxsPSIjZTg0NzJiIiBsZXR0ZXItc3BhY2luZz0iLTEiPkc8L3RleHQ+PC9zdmc+">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{background:#fff;color:#1d1d1f;font-family:'Noto Sans JP',-apple-system,sans-serif;-webkit-font-smoothing:antialiased;line-height:1}
+nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.88);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:.5px solid #d2d2d7;padding:0 48px;height:48px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:.08em;color:#1d1d1f;text-decoration:none}
+.nav-logo span{color:#e8472b}
+.nav-back{font-size:12px;color:#86868b;text-decoration:none;letter-spacing:.04em}
+.nav-back:hover{color:#1d1d1f}
+.hero{padding:120px 48px 80px;max-width:980px;margin:0 auto}
+.hero-eyebrow{font-size:12px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:#e8472b;margin-bottom:20px}
+.hero-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(52px,8vw,96px);letter-spacing:.01em;color:#1d1d1f;line-height:.95;margin-bottom:28px}
+.hero-meta{display:flex;align-items:center;gap:16px;margin-bottom:40px}
+.meta-year{font-size:13px;font-weight:500;color:#1d1d1f;background:#f5f5f7;padding:4px 12px;border-radius:20px}
+.meta-cat{font-size:13px;color:#86868b}
+.hero-lead{font-size:19px;font-weight:300;line-height:1.75;color:#1d1d1f;max-width:980px}
+.hero-lead .hl{background:linear-gradient(transparent 60%,#fff3c0 60%)}
+.image-section{background:#0a0a0a;padding:80px 48px}
+.image-inner{max-width:980px;margin:0 auto}
+.image-label{font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:#555;margin-bottom:24px}
+.image-frame{border-radius:12px;overflow:hidden;box-shadow:0 32px 80px rgba(0,0,0,.6),0 8px 24px rgba(0,0,0,.4);line-height:0}
+.image-frame img{width:100%;height:auto;display:block}
+.image-caption{margin-top:16px;display:flex;justify-content:space-between;align-items:baseline}
+.image-caption-title{font-size:13px;color:#888;font-weight:400}
+.image-caption-credit{font-size:11px;color:#555;letter-spacing:.04em}
+.body-section{padding:80px 48px;max-width:980px;margin:0 auto}
+.body-text{font-size:17px;font-weight:300;line-height:1.85;color:#1d1d1f;max-width:980px}
+.body-text p+p{margin-top:24px}
+.body-text .hl{background:linear-gradient(transparent 60%,#fff3c0 60%)}
+.quote-section{padding:0 48px 80px;max-width:980px;margin:0 auto}
+.quote-block{border-left:2px solid #e8472b;padding:4px 0 4px 32px}
+.quote-text{font-size:24px;font-weight:300;line-height:1.65;color:#1d1d1f;font-style:italic;letter-spacing:-.01em;margin-bottom:16px;max-width:980px}
+.quote-translation{font-size:15px;font-weight:300;line-height:1.7;color:#86868b;font-style:normal;margin-top:10px;margin-bottom:14px;}
+.quote-author{font-size:13px;color:#86868b;font-weight:400;font-style:normal}
+.question-section{background:#1d1d1f;padding:80px 48px}
+.question-inner{max-width:980px;margin:0 auto}
+.question-label{font-size:11px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:#6e6e73;margin-bottom:20px}
+.question-text{font-size:22px;font-weight:300;line-height:1.7;color:#f5f5f7;max-width:980px}
+.question-text em{color:#e8472b;font-style:normal}
+.nav-bottom{padding:48px;display:flex;justify-content:space-between;align-items:center;border-top:.5px solid #d2d2d7}
+.prev-next a{font-size:13px;color:#e8472b;text-decoration:none;letter-spacing:.04em}
+.prev-next a:hover{text-decoration:underline}
+footer{padding:32px 48px;border-top:.5px solid #d2d2d7;display:flex;justify-content:space-between;align-items:center}
+.footer-logo{font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:.08em;color:#86868b}
+.footer-logo span{color:#c0bfba}
+.footer-copy{font-size:12px;color:#86868b}
+@media(max-width:720px){nav{padding:0 20px}.hero{padding:80px 20px 60px}.image-section{padding:60px 20px}.body-section{padding:60px 20px}.quote-section{padding:0 20px 60px}.question-section{padding:60px 20px}.nav-bottom{padding:32px 20px}footer{padding:24px 20px}}
+
+.bg-section{background:#f5f5f7;padding:64px 0;}
+.bg-inner{max-width:980px;margin:0 auto;padding:0 48px;}
+.bg-label{font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:#86868b;margin-bottom:20px;}
+.bg-text{font-size:15px;font-weight:300;line-height:1.9;color:#3a3a3c;max-width:980px;}
+.bg-text p+p{margin-top:20px;}
+.timeline{max-width:980px;margin:32px 0 0;}
+.tl-item{display:flex;gap:24px;padding:20px 0;border-bottom:.5px solid #e5e5ea;}
+.tl-item:last-child{border-bottom:none;}
+.tl-year{font-family:'Bebas Neue',sans-serif;font-size:22px;color:#e8472b;min-width:60px;letter-spacing:.04em;padding-top:2px;}
+.tl-body{font-size:14px;font-weight:300;line-height:1.8;color:#3a3a3c;}
+.tl-title{font-size:14px;font-weight:500;color:#1d1d1f;margin-bottom:4px;}
+.principles{max-width:980px;margin:32px 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#e5e5ea;border:1px solid #e5e5ea;border-radius:12px;overflow:hidden;}
+.principle-item{background:#fff;padding:24px;}
+.principle-num{font-family:'Bebas Neue',sans-serif;font-size:40px;color:#e8472b;line-height:1;margin-bottom:8px;}
+.principle-title{font-size:14px;font-weight:500;color:#1d1d1f;margin-bottom:8px;}
+.principle-desc{font-size:13px;font-weight:300;line-height:1.75;color:#86868b;}
+@media(max-width:640px){.principles{grid-template-columns:1fr;}}
+
+/* 信号機ビジュアル */
+.signal-visual{max-width:980px;margin:0 auto;background:#1a1a1a;border-radius:12px;padding:64px;display:flex;align-items:center;justify-content:center;gap:48px;}
+.signal-box{background:#222;border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:20px;box-shadow:0 20px 60px rgba(0,0,0,.5);}
+.signal-lamp{width:64px;height:64px;border-radius:50%;background:#3a3a3a;}
+.signal-lamp.on-red{background:radial-gradient(circle at 35% 35%,#ff6b5b,#e8472b 70%);box-shadow:0 0 36px rgba(232,71,43,.7);}
+.signal-lamp.on-yellow{background:radial-gradient(circle at 35% 35%,#ffe06b,#e8b923 70%);box-shadow:0 0 36px rgba(232,185,35,.7);}
+.signal-lamp.on-green{background:radial-gradient(circle at 35% 35%,#7be08a,#2ea84a 70%);box-shadow:0 0 36px rgba(46,168,74,.7);}
+.signal-meaning{display:flex;flex-direction:column;gap:20px;}
+.signal-meaning-item{display:flex;align-items:center;gap:16px;}
+.signal-dot{width:14px;height:14px;border-radius:50%;flex-shrink:0;}
+.signal-dot.red{background:#e8472b;}
+.signal-dot.yellow{background:#e8b923;}
+.signal-dot.green{background:#2ea84a;}
+.signal-meaning-text{font-size:14px;font-weight:300;color:#d2d2d7;letter-spacing:.04em;}
+.signal-meaning-text strong{color:#fff;font-weight:500;}
+@media(max-width:640px){.signal-visual{padding:40px 24px;flex-direction:column;gap:32px;}.signal-lamp{width:48px;height:48px;}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">DESIGN<span>GUM</span></a>
+  <a class="nav-back" href="index.html">← 一覧へ</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-eyebrow">Vol.17 — プロダクト / サインデザイン / 1920</div>
+  <h1 class="hero-title">信号機の色を<br>決めた<br>男</h1>
+  <div class="hero-meta">
+    <span class="meta-year">1920</span>
+    <span class="meta-cat">ウィリアム・ポッツ / デトロイト警察</span>
+  </div>
+  <p class="hero-lead">赤は止まれ、黄色は注意、緑は進め。<span class="hl">世界中の誰もが、説明書なしで従っているこのルール</span>は、1920年にひとりの警官が交差点に取り付けた木箱から始まった。</p>
+</section>
+
+<div class="image-section">
+  <div class="image-label">Object</div>
+  <div class="signal-visual">
+    <div class="signal-box">
+      <div class="signal-lamp on-red"></div>
+      <div class="signal-lamp on-yellow"></div>
+      <div class="signal-lamp on-green"></div>
+    </div>
+    <div class="signal-meaning">
+      <div class="signal-meaning-item"><span class="signal-dot red"></span><span class="signal-meaning-text"><strong>赤</strong> — 鉄道信号の「危険」をそのまま継承</span></div>
+      <div class="signal-meaning-item"><span class="signal-dot yellow"></span><span class="signal-meaning-text"><strong>黄</strong> — 1914年の事故をきっかけに追加された「注意」</span></div>
+      <div class="signal-meaning-item"><span class="signal-dot green"></span><span class="signal-meaning-text"><strong>緑</strong> — 「白」が誤認されたために置き換えられた「進め」</span></div>
+    </div>
+  </div>
+  <div class="image-caption" style="max-width:980px;margin:14px auto 0;">
+    <span class="image-caption-title">3色信号の構成, 1920年頃に確立</span>
+    <span class="image-caption-credit">鉄道信号の色彩規則を継承・再構成</span>
+  </div>
+</div>
+
+<div class="body-section">
+  <div class="body-text">
+    <p>赤は止まれ、黄色は注意、緑（青）は進め。世界190以上の国と地域で、この3色は同じ意味を持つ。誰にも教わらなくても、初めて見た信号機の前で人は自然と立ち止まる。だが、この「翻訳のいらないデザイン」は、最初から3色だったわけではない。</p>
+    <p>色のルーツは1830年代の鉄道信号にさかのぼる。当時の鉄道は「赤＝停止」「白＝進行」「緑＝注意」という3色を使っていた。<span class="hl">ところが1914年、ある信号機の赤いレンズが外れて落ち、その奥にあった白色光がむき出しになった。</span>列車の運転士はそれを「進行」の合図と読み違え、衝突事故が起きた。</p>
+    <p>この事故をきっかけに、鉄道会社は色の意味を見直した。「白＝進行」は廃止され、緑が進行を、そして赤と緑の中間にあり霧の中でも識別しやすい黄色が、新たに「注意」として加えられた。色は感性ではなく、<span class="hl">事故の記録から逆算して設計された</span>のだ。</p>
+    <p>そして1920年、アメリカ・デトロイト。交差点の混雑を一人で捌いていた警察官ウィリアム・ポッツは、鉄道信号の部品を流用し、自作の電気仕掛けで赤・黄・緑の3色を切り替える信号機を作った。費用はわずか37ドル。これが世界初の四方向・3色式の電気交通信号機だったと言われている。たった一人の警官が交差点に立てた箱が、やがて世界中の道路の「共通言語」になった。</p>
+  </div>
+</div>
+
+<div class="bg-section">
+  <div class="bg-inner">
+    <div class="bg-label">信号の色が「世界標準」になった3つの理由</div>
+    <div class="principles">
+      <div class="principle-item">
+        <div class="principle-num">01</div>
+        <div class="principle-title">ゼロから決めなかった</div>
+        <div class="principle-desc">信号の色は新しく発明されたものではなく、19世紀の鉄道信号からそのまま受け継がれた。「すでに人々が知っている色」を流用することで、普及のハードルを最小限にした。</div>
+      </div>
+      <div class="principle-item">
+        <div class="principle-num">02</div>
+        <div class="principle-title">事故から逆算した配色</div>
+        <div class="principle-desc">赤は波長が長く遠くまで届き、黄は霧や雨でも識別しやすい。3色の組み合わせは美的センスではなく、誤認による事故の記録から導き出された「安全のための配色」だった。</div>
+      </div>
+      <div class="principle-item">
+        <div class="principle-num">03</div>
+        <div class="principle-title">学習不要のインターフェース</div>
+        <div class="principle-desc">言語も文字も使わず、世界中どこでも同じ意味で機能する。信号の色は、史上もっとも広く使われている「説明のいらないUI」のひとつになった。</div>
+      </div>
+    </div>
+
+    <div style="margin-top:48px;">
+      <div class="bg-label">信号機の色の系譜</div>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-year">1830s</div>
+          <div class="tl-body">
+            <div class="tl-title">鉄道信号に「赤・白・緑」が登場</div>
+            欧米の鉄道で、赤＝停止、白＝進行、緑＝注意という色分けによる信号が使われ始める。
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">1914</div>
+          <div class="tl-body">
+            <div class="tl-title">信号レンズの脱落による衝突事故</div>
+            「白＝進行」が誤認識される事故をきっかけに、鉄道会社は配色の見直しを迫られる。緑が進行、新たに加わった黄が注意となった。
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">1920</div>
+          <div class="tl-body">
+            <div class="tl-title">デトロイトで3色式電気信号機が誕生</div>
+            警察官ウィリアム・ポッツが、鉄道信号の部品を流用して世界初とされる四方向・3色式の電気交通信号機を考案。
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">1930</div>
+          <div class="tl-body">
+            <div class="tl-title">日本初の自動信号機が日比谷交差点に設置</div>
+            東京・日比谷交差点に日本初の自動式交通信号機が登場。以後、赤・黄・緑（日本では「青」と呼ばれる）の3色が全国に広がる。
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">現在</div>
+          <div class="tl-body">
+            <div class="tl-title">世界共通の「色の言語」として機能</div>
+            言葉も文字も通じない国でも、信号の3色だけは誰もが同じように読み取れる。デザインが「翻訳」を必要としない数少ない例のひとつ。
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="quote-section" style="padding:64px 48px;">
+  <div class="quote-block">
+    <p class="quote-text">"Color is a power which directly influences the soul."</p>
+    <p class="quote-translation">「色彩は魂に直接働きかける力である。」</p>
+    <p class="quote-author">— ワシリー・カンディンスキー</p>
+  </div>
+</div>
+
+<div class="question-section">
+  <div class="question-inner">
+    <div class="question-label">Today's Question</div>
+    <p class="question-text">あなたが今日、何の疑問も持たずに従った「赤は止まれ」のサインは、100年前にひとりの警官が交差点に立てた木箱から始まった。<em>当たり前に見えるデザイン</em>ほど、その裏には誰かが「決めた」瞬間がある。</p>
+  </div>
+</div>
+
+<div class="nav-bottom">
+  <div><a href="vol16.html">← Vol.16 コンピュータ画面を初めてデザインした人</a></div>
+  <div><a href="index.html">一覧へ →</a></div>
+</div>
+
+<footer>
+  <div class="footer-logo">DESIGN<span>GUM</span></div>
+  <div class="footer-copy">© 2025 DESIGNGUM</div>
+</footer>
+
+</body>
+</html>
